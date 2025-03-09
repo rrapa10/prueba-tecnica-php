@@ -43,7 +43,6 @@ make start
 ```
 📌 **Esto iniciará Docker, esperará que los contenedores se inicien y aplicará las migraciones de la base de datos automáticamente.**
 
-```
 
 ### **🔹 Paso 3: Instalar dependencias con Composer**
 

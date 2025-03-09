@@ -32,7 +32,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 ### **🔹 Paso 1: Clonar el repositorio**
 
 ```bash
-git clone https://github.com/TU-USUARIO/prueba-tecnica-php.git
+git clone https://github.com/rrapa10/prueba-tecnica-php.git
 cd prueba-tecnica-php
 ```
 
@@ -131,7 +131,7 @@ make stop
 
 ## **📌 Contacto**
 
-Si tienes dudas, contáctame en [GitHub](https://github.com/TU-USUARIO).
+Si tienes dudas, contáctame en [GitHub](https://github.com/rrapa10).
 
 👉 **¡Listo! Con este README, tu proyecto estará completamente documentado. 🚀**
 

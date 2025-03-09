@@ -1,6 +1,7 @@
 start:
 	docker-compose up --build -d
-
+	mkdir -p public
+	
 stop:
 	docker-compose down
 

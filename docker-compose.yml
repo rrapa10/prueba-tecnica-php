@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  php:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: php_app
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - app_network
+    ports:
+      - "8020:8020"
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: prueba_tecnica
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    networks:
+      - app_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8080:80"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

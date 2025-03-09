@@ -1,0 +1,17 @@
+# Ignorar dependencias de Composer
+/vendor
+/composer.lock
+
+
+
+# Ignorar caché de Doctrine
+/var/cache/
+/var/logs/
+/var/data/
+
+# Ignorar archivos de Docker temporales
+docker-compose.override.yml
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db

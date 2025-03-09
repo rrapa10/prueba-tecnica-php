@@ -10,8 +10,6 @@ use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Controller\RegisterUserController;
 use Application\UseCase\RegisterUserUseCase;
 use Infrastructure\Persistence\DoctrineUserRepository;
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
 
 $app = AppFactory::create();
 

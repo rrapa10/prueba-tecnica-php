@@ -44,7 +44,7 @@ class RegisterUserController
             ];
 
             // 🚨 Depuración: Verifica si se genera el JSON correctamente
-            error_log("JSON Response: " . json_encode($responseData));
+            //error_log("JSON Response: " . json_encode($responseData));
 
             $response->getBody()->write(json_encode($responseData));
             return $response->withHeader('Content-Type', 'application/json')->withStatus(201);

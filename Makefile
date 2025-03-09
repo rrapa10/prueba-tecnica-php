@@ -14,4 +14,4 @@ migrate:
 	docker exec -it php_app php vendor/bin/doctrine orm:schema-tool:update --force
 
 test:
-	docker exec -it php_app vendor/bin/phpunit
+	docker exec -it php_app vendor/bin/phpunit tests

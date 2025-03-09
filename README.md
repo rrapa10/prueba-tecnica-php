@@ -55,7 +55,7 @@ make install
 ⚠️ **Si `make install` no funciona, intenta ejecutar manualmente:**
 ```bash
 docker exec -it php_app composer install
-
+```
 
 ### **🔹 Paso 4: Crear las tablas en la base de datos (Migraciones)**
 

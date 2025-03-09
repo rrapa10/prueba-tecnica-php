@@ -36,7 +36,16 @@ git clone https://github.com/rrapa10/prueba-tecnica-php.git
 cd prueba-tecnica-php
 ```
 
-### **🔹 Paso 2: Instalar dependencias con Composer**
+### **🔹 Paso 2: Iniciar el entorno con Docker y Makefile**
+
+```bash
+make start
+```
+📌 **Esto iniciará Docker, esperará que los contenedores se inicien y aplicará las migraciones de la base de datos automáticamente.**
+
+```
+
+### **🔹 Paso 3: Instalar dependencias con Composer**
 
 Antes de ejecutar la aplicación, es necesario instalar las dependencias de PHP dentro del contenedor:
 ```bash
@@ -47,14 +56,7 @@ make install
 ⚠️ **Si `make install` no funciona, intenta ejecutar manualmente:**
 ```bash
 docker exec -it php_app composer install
-```
 
-### **🔹 Paso 3: Iniciar el entorno con Docker y Makefile**
-
-```bash
-make start
-```
-📌 **Esto iniciará Docker, esperará que los contenedores se inicien y aplicará las migraciones de la base de datos automáticamente.**
 
 ### **🔹 Paso 4: Crear las tablas en la base de datos (Migraciones)**
 

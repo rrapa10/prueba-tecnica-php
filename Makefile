@@ -1,7 +1,8 @@
 start:
 	docker-compose up --build -d
 	mkdir -p public
-	
+install:
+	docker exec -it php_app composer install
 stop:
 	docker-compose down
 
